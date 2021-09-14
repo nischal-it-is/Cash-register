@@ -84,3 +84,9 @@ body {
     border-collapse: collapse;
     padding: 0.4rem;
   }
+  #message
+  {
+    font-weight: bolder;
+    margin: 0.5rem;
+    padding: 0.2rem;
+  }
