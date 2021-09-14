@@ -11,17 +11,19 @@ messageHide();
 sub.addEventListener('click',function display(){
     // console.log(cash.value);
     //     console.log("bill amount "+bill.value);
-    if(bill.value<0)
+    const billAmt=Number(bill.value);
+    const cashAmt=Number(cash.value);
+    if(billAmt<0)
     {
         //alert('bill amount cannot be negative or zero');
         errorMessage('bill amount cannot be negative');
     }
-    else if(cash.value<0)
+    else if(cashAmt<0)
     {
         //alert('Invalid cash input');
         errorMessage('Invalid Cash Input');
     }
-    else if(cash.value<bill.value)
+    else if(cashAmt<billAmt)
     {
         //alert('Payment is not full! Credit remaining');
         errorMessage('Payment is not full! Credit Remaining');
@@ -29,7 +31,7 @@ sub.addEventListener('click',function display(){
     else{
         messageHide();
         
-        var amountToBeReturned=cash.value-bill.value;
+        var amountToBeReturned=cashAmt-billAmt;
         console.log(amountToBeReturned);
         calculateNotes(amountToBeReturned);
         
