@@ -13,17 +13,7 @@ sub.addEventListener('click',function display(){
     //     console.log("bill amount "+bill.value);
     const billAmt=Number(bill.value);
     const cashAmt=Number(cash.value);
-    if(billAmt<0)
-    {
-        //alert('bill amount cannot be negative or zero');
-        errorMessage('bill amount cannot be negative');
-    }
-    else if(cashAmt<0)
-    {
-        //alert('Invalid cash input');
-        errorMessage('Invalid Cash Input');
-    }
-    else if(cashAmt<billAmt)
+    if(cashAmt<billAmt)
     {
         //alert('Payment is not full! Credit remaining');
         errorMessage('Payment is not full! Credit Remaining');
