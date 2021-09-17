@@ -13,6 +13,7 @@ sub.addEventListener('click',function display(){
     //     console.log("bill amount "+bill.value);
     const billAmt=Number(bill.value);
     const cashAmt=Number(cash.value);
+    console.log(billAmt+" "+cashAmt);
     if(cashAmt<billAmt)
     {
         //alert('Payment is not full! Credit remaining');
