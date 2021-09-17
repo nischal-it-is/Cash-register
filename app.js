@@ -1,4 +1,4 @@
-var bill=document.querySelector("#billAmount");
+var bill=document.querySelector("#billAmount").validity.valid;
 var cash=document.querySelector("#cash");
 var sub=document.querySelector("#submit");
 var notes=document.querySelectorAll('.no-of-notes');//important step
