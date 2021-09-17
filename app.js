@@ -22,6 +22,10 @@ sub.addEventListener('click',function display(){
         //alert('Payment is not full! Credit remaining');
         errorMessage('Payment is not full! Credit Remaining');
     }
+    else if(cashAmt==billAmt)
+    {
+        errorMessage('No amount to be returned');
+    }
     else{
         messageHide();
         
