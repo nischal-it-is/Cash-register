@@ -4,6 +4,23 @@ var sub=document.querySelector("#submit");
 var notes=document.querySelectorAll('.no-of-notes');//important step
 var denomination=['2000','500','100','20','10','5','1'];
 var message=document.querySelector('#message');
+var next=document.querySelector('#next');
+var cash=document.querySelector(".cash");
+var para=document.querySelector('#bill-invalid');
+next.addEventListener('click',function onClick(){
+//console.log("next clicked");
+let billAmt=Number(bill.value);
+if(billAmt<=0)
+{
+    //errorMessage('Invalid input');
+    para.style.display="block";
+}
+else{
+    para.style.display="none";
+    cash.style.display="block";
+}
+
+});
 
 //var denomination=['1','5','10','20','100','500','2000'];
 //console.log(notes);

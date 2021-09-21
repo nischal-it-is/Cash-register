@@ -76,7 +76,10 @@ body {
     font-size: x-large;
     font-weight: 500;
   }
-  
+  #bill-invalid
+  {
+    display:none;
+  }
   th,
   td {
     border: 2px solid var(--primary-color);
@@ -90,6 +93,10 @@ body {
     margin: 0.5rem;
     padding: 0.2rem;
     color: rgb(107, 10, 10);
+  }
+  .cash
+  {
+    display:none;
   }
   
 .footer {
