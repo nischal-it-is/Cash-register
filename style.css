@@ -76,6 +76,19 @@ body {
     font-size: x-large;
     font-weight: 500;
   }
+  #next
+  {
+    background: var(--primary-color);
+  border: none;
+  color: #fff;
+  padding: 0.7rem 1rem;
+  border-radius: 0.5rem;
+  font-size: large;
+  cursor: pointer;
+  outline: #fff;
+  margin: auto;
+  display: block;
+  }
   #bill-invalid
   {
     display:none;
